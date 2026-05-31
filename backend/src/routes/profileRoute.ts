@@ -5,7 +5,7 @@ import { authMiddleware } from "../middleware/authMiddleware";
 
 const ProfileRoute = Router();
 
-ProfileRoute.get("/upload-salary-slip", authMiddleware, upload.single("salarySlip") ,uploadSalarySlip);
+ProfileRoute.post("/upload-salary-slip", authMiddleware, upload.single("salarySlip") ,uploadSalarySlip);
 ProfileRoute.post("/", authMiddleware, createBorrowerProfile);
 ProfileRoute.get("/", authMiddleware, getProfile);
 

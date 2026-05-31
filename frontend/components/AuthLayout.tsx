@@ -13,6 +13,7 @@ export default function AuthLayout({
   children,
 }: AuthLayoutProps) {
   return (
+
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
       <div className="container mx-auto px-6">
         {/* Navbar */}
