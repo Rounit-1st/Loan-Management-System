@@ -1,5 +1,4 @@
 import { Router } from "express";
-import {upload} from "../config/multer"
 import { applyForLoan, getMyLoans } from "../controllers/loan.controller";
 import { authMiddleware } from "../middleware/authMiddleware";
 

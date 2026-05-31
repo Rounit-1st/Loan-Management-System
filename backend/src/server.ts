@@ -8,6 +8,10 @@ import {connectToDatabase} from './config/db';
 import authRoute from "./routes/authRoute"
 import profileRoute from "./routes/profileRoute"
 import loanRoute from './routes/loanRoute';
+import salesRoute from './routes/salesRoute';
+import sanctionRoute from './routes/sactionRoute';
+import disbursementRoute from './routes/disbursementRoute';
+import collectorRoute from './routes/collectorRoute';
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import multer from 'multer';
@@ -34,6 +38,10 @@ app.get('/', (req, res) => {
 app.use("/api/auth", authRoute);
 app.use("/api/profile", profileRoute);
 app.use("/api/loans", loanRoute);
+app.use("/api/sales", salesRoute);
+app.use("/api/sanction",sanctionRoute);
+app.use("/api/disbursement",disbursementRoute);
+app.use("/api/collector", collectorRoute);
 
 
 app.listen(port, () => {
