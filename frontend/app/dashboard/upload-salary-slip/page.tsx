@@ -138,7 +138,7 @@ export default function UploadSalarySlipPage() {
         urls={[
           "/dashboard/client",
           "/dashboard/profile",
-          "/loans",
+          "/loan/get-my-loans",
         ]}
       />
 

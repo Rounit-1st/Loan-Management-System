@@ -57,7 +57,7 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/login"
+              href="/executive-login"
               className="rounded-xl border border-slate-600 px-6 py-3 font-semibold hover:bg-slate-800"
             >
               Executive Login

@@ -67,7 +67,7 @@ export default function CompleteProfilePage() {
         setMonthlySalary("");
 
         setTimeout(() => {
-          router.push("/dashboard/profile");
+          router.push("/dashboard/upload-salary-slip");
         }, 1500);
 
         return;
@@ -93,20 +93,20 @@ export default function CompleteProfilePage() {
           "Dashboard",
           "My Loans",
           "Profile",
-          "Logout",
+        
         ]}
         urls={[
           "/dashboard/client",
-          "/loans",
-          "/profile",
-          "/logout",
+          "/loan/get-my-loans",
+          "/dashboard/profile",
+          
         ]}
       />
     <Container>
         
       <form
         onSubmit={handleSubmit}
-        className="space-y-5"
+        className="space-y-5 p-10 max-w-lg mx-auto"
       >
         {error && (
           <div className="rounded-xl border border-red-500/30 bg-red-500/10 p-3 text-sm text-red-400">

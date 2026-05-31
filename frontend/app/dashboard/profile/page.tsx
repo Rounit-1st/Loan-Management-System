@@ -63,12 +63,14 @@ export default function ProfilePage() {
           "Dashboard",
           "Loans",
           "Profile",
-          "Logout",
+          "Upload Salary Slip"
         ]}
         urls={[
           "/dashboard/client",
-          "/loans",
-          "/dashboard/profile", ]}></Header>
+          "/loan/get-my-loans",
+          "/dashboard/profile",
+          "/dashboard/upload-salary-slip",
+          ]}></Header>
     <Container>
       <section className="flex min-h-[85vh] items-center justify-center py-10">
         <div className="w-full max-w-2xl rounded-3xl border border-slate-700 bg-slate-900/60 p-8 backdrop-blur">

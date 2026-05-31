@@ -57,7 +57,7 @@ export default function RegisterPage() {
         );
       }
 
-      setSuccess("Registration successful!");
+      setSuccess("Registration successful! Redirecting to login...");
 
       setName("");
       setEmail("");

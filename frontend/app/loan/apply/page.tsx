@@ -80,13 +80,13 @@ export default function ApplyLoanPage() {
       <Header
         items={[
           "Dashboard",
-          "Apply Loan",
+          "My Loans",
           "Profile",
         ]}
         urls={[
-          "/dashboard",
-          "/apply-loan",
-          "/profile",
+          "/dashboard/client",
+          "/loan/get-my-loans",
+          "/dashboard/profile",
         ]}
       />
 

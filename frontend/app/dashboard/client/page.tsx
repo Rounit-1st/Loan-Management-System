@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Header from "@/components/Header";
 
 type ProfileState = "loading" | "not-found" | "exists" | "error";
 
@@ -51,6 +52,20 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <Header
+              items={[
+                "Home",
+                "My Loans",
+                "Profile",
+              
+              ]}
+              urls={[
+                "/",
+                "/loan/get-my-loans",
+                "/dashboard/profile",
+                
+              ]}
+            />
       <div className="mx-auto flex min-h-screen max-w-7xl items-center justify-center px-6">
         <div className="w-full max-w-md rounded-2xl border border-slate-800 bg-slate-900 p-8 shadow-xl">
           <h1 className="mb-2 text-center text-3xl font-bold">
@@ -97,7 +112,7 @@ export default function DashboardPage() {
 
               <button
                 onClick={() =>
-                  router.push("/dashboard/loan/apply")
+                  router.push("/loan/apply")
                 }
                 className="w-full rounded-xl border border-slate-700 bg-slate-950 py-3 font-semibold text-white transition hover:border-cyan-400"
               >
