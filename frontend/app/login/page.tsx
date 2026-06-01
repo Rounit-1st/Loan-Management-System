@@ -126,7 +126,35 @@ const handleSubmit = async (
           {loading ? "Logging in..." : "Login"}
         </button>
       </form>
+<div className="mt-8 rounded-2xl border border-slate-700 bg-slate-950/70 p-4">
+  <h3 className="mb-3 text-center font-semibold text-cyan-400">
+    Demo Borrower Account
+  </h3>
 
+  <div className="rounded-lg border border-slate-700 p-3 text-sm">
+    <p className="font-medium text-white">
+      Borrower
+    </p>
+
+    <p className="text-slate-400">
+      Email: borrower@gmail.com
+    </p>
+
+    <p className="text-slate-400">
+      Password: borrower123
+    </p>
+  </div>
+</div>
+
+<p className="mt-6 text-center text-sm text-slate-400">
+  Don't have an account?{" "}
+  <Link
+    href="/register"
+    className="font-medium text-cyan-400"
+  >
+    Register
+  </Link>
+</p>
       <p className="mt-6 text-center text-sm text-slate-400">
         Don't have an account?{" "}
         <Link

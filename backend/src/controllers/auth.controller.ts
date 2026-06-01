@@ -91,7 +91,7 @@ export const login = async (req: Request, res: Response) => {
         res.cookie("LMS-token", token, {
             httpOnly: true,
             secure: process.env.NODE_ENV === "production",
-            sameSite: "strict",
+            sameSite: "none",
             maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
         });
 
@@ -112,7 +112,7 @@ export const login = async (req: Request, res: Response) => {
 };
 
 export const logout = async (req: Request, res: Response) => {
-    res.clearCookie("token");
+    res.clearCookie("LMS-token");
 
     return res.status(200).json({
         success: true,
