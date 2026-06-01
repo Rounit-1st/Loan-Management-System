@@ -18,10 +18,10 @@ import multer from 'multer';
 import path from 'path';
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: process.env.FRONTEND_URL,
     credentials: true,
 }));
 app.use(
@@ -33,7 +33,7 @@ app.use(express.json());
 connectToDatabase();
 
 app.get('/', (req, res) => {
-     res.status(418).send(")I AM A TEAPOT");
+     res.status(418).send("I AM A TEAPOT");
 });
 app.use("/api/auth", authRoute);
 app.use("/api/profile", profileRoute);
