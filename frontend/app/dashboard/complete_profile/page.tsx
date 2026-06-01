@@ -87,7 +87,7 @@ export default function CompleteProfilePage() {
   };
 
   return (
-    <>
+    <Container>
     <Header
         items={[
           "Dashboard",
@@ -230,6 +230,6 @@ export default function CompleteProfilePage() {
         </button>
       </form>
     </Container>
-    </>
+    </Container>
   );
 }
