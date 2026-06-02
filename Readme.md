@@ -109,6 +109,12 @@ Loan Closure
 
 ---
 
+# 🎬 Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/bDroPs2eZIg/maxresdefault.jpg)](https://youtu.be/bDroPs2eZIg)
+
+---
+
 # 🛠️ Technology Stack
 
 ## Frontend
